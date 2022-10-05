@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: #0e3d09;
+}
+.heading{
+    color: white;
+}
+.nav{
+    background-color: #fbbf24;
+    padding-left: 0.5rem;
+    border-bottom-left-radius: 1rem;
+}
+.nav-bar{
+    text-decoration: none;
+
+}
+.active-link{
+    font-weight: bold;
+}
+#output{
+    text-align: center;
+    font-weight: bold;
+}
+#hypotenuse-length-btn{
+    border-radius: 0.3rem;
+    border: transparent;
+    background-color: #fbbf24;
+    padding: 0.5rem 2rem;
+    color:#0e3d09;
+    display: block;
+    margin: auto;
+}
+.side-length{
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.angle{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.text{
+    text-align: center;
+    padding: 2rem;
+    color: #0e3d09;
+    font-weight: bold;
+}
+strong{
+    color: #fbbf24;
+}

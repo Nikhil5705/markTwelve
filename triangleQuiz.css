@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: #0e3d09;
+}
+.heading{
+    color: white;
+}
+.nav{
+    background-color: #fbbf24;
+    padding-left: 0.5rem;
+    border-bottom-left-radius: 1rem;
+}
+.nav-bar{
+    text-decoration: none;
+}
+.active-link{
+    font-weight: bold;
+}
+#submit-answer-btn{
+    margin: 1rem;
+    border-radius: 0.3rem;
+    border: transparent;
+    background-color: #fbbf24;
+    padding: 0.5rem 2rem;
+    color:#0e3d09;
+}
+.quiz-form{
+    font-weight: bold;
+}
+#output{
+    text-align: center;
+    font-weight: bold;
+}
