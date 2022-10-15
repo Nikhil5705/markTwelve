@@ -1,14 +1,16 @@
-const quizForm = document.querySelector(".quiz-form");
-const submitBtn = document.querySelector("#submit-answer-btn");
-const output = document.querySelector("#output");  
+var quizForm = document.querySelector(".quiz-form");
+var submitBtn = document.querySelector("#submit-answer-btn");
+var output = document.querySelector("#output");  
 
-const correctAnswer = ["80°", "60°", "180", "90°", "acute"];
+var correctAnswer = ["80°", "60°", "180", "90°", "acute"];
 
 function calculateScore(){
     let score = 0;
     let index = 0;
-    const result = new FormData(quizForm);
+    var result = new FormData(quizForm);
     for(let value of result.values()){
+        console.log("value"+value);
+        console.log("correctAnswer[index]"+correctAnswer[index]);
         if (value === correctAnswer[index]){
             score = score + 1;
         }
