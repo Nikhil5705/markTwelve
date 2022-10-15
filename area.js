@@ -9,17 +9,19 @@ function mulltiplyOfSides(a, b){
 }
 
 function calculateArea(){
-  // if(base == '' || height ==''){
-  //    output.innerText = "Enter all fields";
-  // }
-  if(base > 0 && height > 0){
-   var sidesMultiple = mulltiplyOfSides(Number(base.value), Number(height.value));
-   var areaOfTriangle = sidesMultiple;
-  console.log(areaOfTriangle);
-    output.innerText = "Area of △ is " + areaOfTriangle + " cm²";
+var baseValue = base.value;
+var heightValue = height.value;
+  if(baseValue == '' || heightValue ==''){
+     output.innerText = "Enter all fields";
+  }
+  else if(baseValue <= 0 || heightValue <= 0){
+    output.innerText = "Enterd a Value can't be Negative or 0";
   }
   else{
-    output.innerText = "Please enter a Value greater than 0";
+    var sidesMultiple = mulltiplyOfSides(Number(base.value), Number(height.value));
+    var areaOfTriangle = sidesMultiple;
+   console.log(areaOfTriangle);
+     output.innerText = "Area of △ is " + areaOfTriangle + " cm²";
  }
  
 }
