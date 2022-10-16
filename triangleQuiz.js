@@ -2,19 +2,19 @@ var quizForm = document.querySelector(".quiz-form");
 var submitBtn = document.querySelector("#submit-answer-btn");
 var output = document.querySelector("#output");  
 
-var correctAnswer = ["80°", "60°", "180", "90°", "acute"];
+var correctAnswers = ["80°", "60°", "Equilateral", "90°", "acute"];
 
-function calculateScore(){
+
+    function calculateScore(){
+ 
     let score = 0;
     let index = 0;
-    var result = new FormData(quizForm);
-    for(let value of result.values()){
-        console.log("value"+value);
-        console.log("correctAnswer[index]"+correctAnswer[index]);
-        if (value === correctAnswer[index]){
-            score = score + 1;
+    var formResult = new FormData(quizForm);
+    for(let value of formResult.values()){
+        if (value === correctAnswers[index]){
+        score ++;
         }
-        index = index + 1;
+        index ++;
     }
     output.innerText = "You Scored " + score;
 }
