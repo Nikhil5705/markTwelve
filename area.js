@@ -15,7 +15,7 @@ var heightValue = height.value;
      output.innerText = "Enter all fields";
   }
   else if(baseValue <= 0 || heightValue <= 0){
-    output.innerText = "Enterd a Value can't be Negative or 0";
+    output.innerText = "Entered Value can't be Negative or 0";
   }
   else{
     var sidesMultiple = mulltiplyOfSides(Number(base.value), Number(height.value));

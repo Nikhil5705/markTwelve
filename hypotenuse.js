@@ -14,7 +14,7 @@ function calculateHypotenuseLength(){
     output.innerText = "Please fill all fields";
     }
     else if(Number(sideOne) <= 0 || Number(sideTwo) <= 0){
-    output.innerText = "Entered Side must be greater than 0";
+    output.innerText = "Entered Value can't be Negative or 0";
     }
     else{
 var sumOfSquares = getSquares(Number(sides[0].value), Number(sides[1].value));
